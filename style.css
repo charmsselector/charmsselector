@@ -1,0 +1,358 @@
+/* =========================
+   ESTILOS GENERALES
+   ========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', Arial, sans-serif;
+    margin: 0;
+    padding: 15px;
+    background-color: #F6F1E8;
+    color: #2B2522;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Playfair Display', Georgia, serif;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   CABECERA
+   ========================= */
+
+header {
+    text-align: center;
+}
+
+h1 {
+    font-size: 34px;
+    margin: 10px 0 20px;
+    color: #49352B;
+    letter-spacing: 0.5px;
+}
+
+header h1::after {
+    content: "✦";
+    display: block;
+    width: 180px;
+    margin: 15px auto 0;
+    color: #B89B5E;
+    font-size: 14px;
+    line-height: 1;
+    background:
+        linear-gradient(#B89B5E, #B89B5E) left center / 80px 1px no-repeat,
+        linear-gradient(#B89B5E, #B89B5E) right center / 80px 1px no-repeat;
+}
+
+.separador {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    color: #B89B5E;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.separador::before,
+.separador::after {
+    content: "";
+    width: 80px;
+    height: 1px;
+    background-color: #B89B5E;
+}
+
+
+/* =========================
+   MENÚ
+   ========================= */
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    margin-bottom: 10px;
+}
+
+nav a {
+    display: block;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #2B2522;
+    border-radius: 8px;
+}
+
+nav a:hover {
+    background-color: #E8D8D5;
+}
+
+
+/* =========================
+   CONTENIDO PRINCIPAL
+   ========================= */
+
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+main h2 {
+    font-size: 30px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    color: #49352B;
+}
+
+
+/* =========================
+   PRESENTACIÓN
+   ========================= */
+
+.hero {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 30px 10px;
+}
+
+.hero p {
+    max-width: 650px;
+    margin: 0 auto;
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+
+/* =========================
+   CATEGORÍAS
+   ========================= */
+
+article {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    background-color: #FFFFFF;
+    padding: 20px;
+    min-height: 300px;
+    border-top: 2px solid #B89B5E;
+    margin-top: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+article h3 {
+    font-size: 23px;
+    margin-top: 0;
+    margin-bottom: 12px;
+    color: #49352B;
+}
+
+article:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 14px rgba(0, 0, 0, 0.12);
+}
+
+
+/* =========================
+   BOTONES
+   ========================= */
+
+article a {
+    display: block;
+    width: fit-content;
+    margin: auto auto 0;
+    padding: 10px 16px;
+    background-color: #49352B;
+    color: #FFFFFF;
+    border-radius: 8px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+article a:hover {
+    background-color: #654C3C;
+    color: #FFFFFF;
+}
+
+
+/* =========================
+   DISEÑO RESPONSIVE
+   ========================= */
+
+@media (min-width: 768px) {
+
+    nav ul {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    nav li {
+        margin-bottom: 0;
+    }
+
+    .categorias {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .categorias h2 {
+        grid-column: 1 / -1;
+    }
+
+   
+
+}
+
+.categorias article img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.filtros {
+    margin-top: 30px;
+    padding: 20px 0;
+}
+
+.filtros h2 {
+    margin-bottom: 20px;
+}
+
+.botones-filtro {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.botones-filtro button {
+    padding: 10px 18px;
+    border: 1px solid #B89B5E;
+    border-radius: 20px;
+    background-color: #FFFFFF;
+    color: #49352B;
+    font-family: 'Inter', Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.botones-filtro button:hover {
+    background-color: #49352B;
+    color: #FFFFFF;
+}
+
+.botones-filtro button.activo {
+    background-color: #49352B;
+    color: #FFFFFF;
+}
+
+.productos {
+    margin-top: 40px;
+}
+
+#lista-productos {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.productos h2 {
+    margin-bottom: 25px;
+    grid-column: 1 / -1;
+}
+
+.producto {
+    width: 100%;
+    padding: 15px;
+    margin: 0;
+    min-height: 0;
+}
+
+.producto img {
+    width: 100%;
+    height: 250px;
+    object-fit: contain;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.producto-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.producto h3 {
+    font-size: 21px;
+    margin: 0 0 10px;
+    color: #49352B;
+}
+
+.producto p {
+    margin: 0 0 15px;
+}
+
+.producto .precio {
+    font-size: 18px;
+    font-weight: 700;
+    color: #49352B;
+}
+
+.boton-producto {
+    display: block;
+    width: fit-content;
+    margin: auto auto 0;
+    padding: 10px 16px;
+    background-color: #49352B;
+    color: #FFFFFF;
+    border-radius: 8px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.boton-producto:hover {
+    background-color: #654C3C;
+}
+
+@media (min-width: 768px) {
+    #lista-productos {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.etiquetas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: 12px;
+}
+
+.etiquetas span {
+    padding: 5px 10px;
+    background-color: #E8D8D5;
+    color: #49352B;
+    border-radius: 15px;
+    font-size: 12px;
+    font-weight: 600;
+}
