@@ -1111,3 +1111,45 @@ footer p:last-of-type {
     line-height: 1.7;
     margin: 8px 0;
 }
+
+/* =========================
+   IMAGEN DE PRODUCTO NO DISPONIBLE
+   ========================= */
+
+.imagen-no-disponible {
+    width: 100%;
+    min-height: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 25px 15px;
+    box-sizing: border-box;
+    background: #FBF8F2;
+    border: 1px solid #D9C29A;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.imagen-no-disponible:hover {
+    background: #F6F1E8;
+}
+
+.icono-amazon {
+    font-size: 42px;
+    margin-bottom: 12px;
+}
+
+.imagen-no-disponible p {
+    margin: 0 0 8px;
+    font-weight: 600;
+    color: #49352B;
+}
+
+.imagen-no-disponible span {
+    font-size: 13px;
+    line-height: 1.5;
+    color: #8A7B72;
+    max-width: 220px;
+}
