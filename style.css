@@ -3,7 +3,6 @@
    HOJA DE ESTILOS PRINCIPAL
    ========================================================= */
 
-
 /* =========================================================
    ESTILOS GENERALES
    ========================================================= */
@@ -31,7 +30,6 @@ p {
     line-height: 1.6;
 }
 
-
 /* =========================================================
    CABECERA
    ========================================================= */
@@ -46,7 +44,6 @@ h1 {
     color: #49352B;
     letter-spacing: 0.5px;
 }
-
 
 /* =========================================================
    MARCA Y LEMA
@@ -70,7 +67,6 @@ h1 {
     text-align: center;
     margin: 0 0 12px;
 }
-
 
 /* =========================================================
    SEPARADOR DE LA MARCA
@@ -99,7 +95,6 @@ header .separador::before {
     font-size: 14px;
     line-height: 1;
 }
-
 
 /* =========================================================
    MENÚ PRINCIPAL
@@ -156,7 +151,6 @@ nav a:hover {
     color: #A77B3F;
 }
 
-
 /* =========================================================
    CONTENIDO PRINCIPAL
    ========================================================= */
@@ -174,13 +168,12 @@ main h2 {
     color: #49352B;
 }
 
-
 /* =========================================================
    PRESENTACIÓN / HERO
    ========================================================= */
 
 .hero {
-    max-width: 700px;
+    max-width: 850px;
     margin: 0 auto;
     padding: 5px 10px 30px;
 }
@@ -191,7 +184,6 @@ main h2 {
     font-size: 17px;
     line-height: 1.7;
 }
-
 
 /* =========================================================
    ARTÍCULOS GENERALES
@@ -223,7 +215,6 @@ article:hover {
     box-shadow: 0 5px 14px rgba(0, 0, 0, 0.12);
 }
 
-
 /* =========================================================
    BOTONES GENERALES
    ========================================================= */
@@ -245,7 +236,6 @@ article a:hover {
     color: #FFFFFF;
 }
 
-
 /* =========================================================
    CATEGORÍAS
    ========================================================= */
@@ -262,7 +252,6 @@ article a:hover {
     margin: 0 0 10px;
     grid-column: 1 / -1;
 }
-
 
 /* -------------------------
    Tarjetas de categorías
@@ -291,7 +280,6 @@ article a:hover {
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.09);
 }
 
-
 /* -------------------------
    Imagen
    ------------------------- */
@@ -304,7 +292,6 @@ article a:hover {
     border-radius: 0;
     margin: 0;
 }
-
 
 /* -------------------------
    Contenido
@@ -338,7 +325,6 @@ article a:hover {
     font-weight: 600;
     color: #A77B3F;
 }
-
 
 /* =========================================================
    PRODUCTOS
@@ -408,7 +394,6 @@ article a:hover {
     background-color: #654C3C;
 }
 
-
 /* =========================================================
    AVISO DE AFILIADO
    ========================================================= */
@@ -419,7 +404,6 @@ article a:hover {
     margin: 6px 0 0;
     text-align: center;
 }
-
 
 /* =========================================================
    PÁGINA DE INICIO
@@ -440,7 +424,6 @@ article a:hover {
     margin: 0 auto 25px;
     color: #6F625B;
 }
-
 
 /* =========================================================
    ENLACES DE INICIO
@@ -490,7 +473,6 @@ article a:hover {
     color: #756961;
 }
 
-
 /* =========================================================
    BOTÓN PRINCIPAL DE INICIO
    ========================================================= */
@@ -513,7 +495,6 @@ article a:hover {
     color: #FFFFFF;
     transform: translateY(-2px);
 }
-
 
 /* =========================================================
    CIERRE DE INICIO / ENLACES INTERNOS
@@ -557,13 +538,12 @@ article a:hover {
     transform: translateY(-2px);
 }
 
-
 /* =========================================================
    CONTENIDO SEO
    ========================================================= */
 
 .contenido-seo {
-    max-width: 900px;
+    max-width: 1050px;
     margin: 75px auto 0;
     text-align: left;
 }
@@ -591,41 +571,50 @@ article a:hover {
     text-underline-offset: 3px;
 }
 
-
 /* =========================================================
    PREGUNTAS FRECUENTES
    ========================================================= */
 
 .faq-seccion {
-    margin-top: 65px;
+    max-width: 900px;
+    margin: 60px auto 0;
+    text-align: center;
 }
 
 .faq-seccion > h2 {
-    text-align: center;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
 }
 
-.faq-seccion article {
+.faq-lista {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.faq-item {
     min-height: 0;
-    margin: 12px 0;
+    margin: 0;
     padding: 20px 24px;
     background-color: #FFFFFF;
     border: 1px solid #D9C29A;
     border-radius: 10px;
+    text-align: left;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
 }
 
-.faq-seccion article h3 {
-    margin: 0 0 10px;
-    font-size: 19px;
+.faq-item h3 {
+    margin: 0 0 8px;
+    font-size: 18px;
+    line-height: 1.4;
     color: #49352B;
 }
 
-.faq-seccion article p {
+.faq-item p {
     margin: 0;
+    font-size: 15px;
     line-height: 1.6;
+    color: #756961;
 }
-
 
 /* =========================================================
    PÁGINA PLATA 925
@@ -635,7 +624,6 @@ article a:hover {
     max-width: 1100px;
     margin: 0 auto;
 }
-
 
 /* -------------------------
    Bloques con imagen
@@ -676,7 +664,6 @@ article a:hover {
     border-radius: 14px;
     box-shadow: 0 4px 14px rgba(0, 0, 0, 0.10);
 }
-
 
 /* -------------------------
    Ventajas
@@ -724,7 +711,6 @@ article a:hover {
     margin: 0;
 }
 
-
 /* -------------------------
    Cuidados
    ------------------------- */
@@ -764,7 +750,6 @@ article a:hover {
 .cuidado-item p {
     margin: 0;
 }
-
 
 /* -------------------------
    Enlaces de categorías
@@ -814,7 +799,6 @@ article a:hover {
     font-size: 18px;
 }
 
-
 /* -------------------------
    FAQ Plata 925
    ------------------------- */
@@ -848,7 +832,6 @@ article a:hover {
     margin: 0;
 }
 
-
 /* -------------------------
    Cierre Plata 925
    ------------------------- */
@@ -866,20 +849,6 @@ article a:hover {
 .plata-cierre p {
     margin: 0;
 }
-
-
-/* =========================================================
-   FOOTER
-   ========================================================= */
-
-footer {
-    margin-top: 70px;
-}
-
-footer p {
-    font-size: 13px;
-}
-
 
 /* =========================================================
    RESPONSIVE - ESCRITORIO
@@ -928,7 +897,6 @@ footer p {
         background-color: currentColor;
     }
 
-
     /* Categorías */
 
     .categorias {
@@ -950,7 +918,6 @@ footer p {
         grid-column: 2;
     }
 
-
     /* Productos */
 
     .productos {
@@ -961,7 +928,6 @@ footer p {
         grid-column: 1 / -1;
     }
 
-
     /* Inicio */
 
     .inicio-enlaces a:nth-child(3):last-child {
@@ -970,7 +936,6 @@ footer p {
         justify-self: center;
     }
 }
-
 
 /* =========================================================
    CABECERA DE PÁGINAS DE PRODUCTOS
@@ -984,7 +949,6 @@ footer p {
 .pagina-productos > .productos {
     margin-top: 15px;
 }
-
 
 /* =========================================================
    RESPONSIVE - MÓVIL
@@ -1018,7 +982,6 @@ footer p {
         margin: 8px 0;
     }
 
-
     /* Contenido SEO */
 
     .contenido-seo {
@@ -1030,17 +993,25 @@ footer p {
         font-size: 24px;
     }
 
-
     /* FAQ */
 
     .faq-seccion {
-        margin-top: 50px;
+        margin-top: 60px;
     }
 
-    .faq-seccion article {
+    .faq-item {
+        min-height: 0;
+        margin: 0;
         padding: 18px;
     }
 
+    .faq-item h3 {
+        font-size: 17px;
+    }
+
+    .faq-item p {
+        font-size: 14px;
+    }
 
     /* Plata 925 */
 
@@ -1091,7 +1062,6 @@ footer p {
         margin-bottom: 60px;
     }
 
-
     /* Categorías */
 
     .categorias {
@@ -1115,7 +1085,6 @@ footer p {
         font-size: 14px;
     }
 
-
     /* Separadores del menú en móvil */
 
     nav li {
@@ -1132,7 +1101,6 @@ footer p {
     }
 
 }
-
 
 /* =========================
    FOOTER
@@ -1180,7 +1148,6 @@ footer p:first-of-type {
 footer p:last-of-type {
     color: #D9C29A;
 }
-
 
 /* =========================
    PÁGINAS LEGALES
@@ -1254,7 +1221,6 @@ footer p:last-of-type {
     margin: 8px 0;
 }
 
-
 /* =========================
    IMAGEN DE PRODUCTO NO DISPONIBLE
    ========================= */
@@ -1297,7 +1263,6 @@ footer p:last-of-type {
     max-width: 220px;
 }
 
-
 /* =========================
    ENLACE DE LA MARCA
    ========================= */
@@ -1314,4 +1279,56 @@ footer p:last-of-type {
 
 .marca-enlace:hover {
     color: inherit;
+}
+
+/* =========================================================
+   BLOQUES SEO DE PERSONAS Y OCASIONES
+   ========================================================= */
+
+.seo-bloques {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px 40px;
+    margin-top: 35px;
+}
+
+.seo-bloques > div {
+    padding-bottom: 22px;
+    border-bottom: 1px solid rgba(185, 152, 98, 0.25);
+}
+
+.seo-bloques h3 {
+    margin: 0 0 10px;
+    font-size: 20px;
+}
+
+.seo-bloques p {
+    margin: 0;
+}
+
+/* =========================================================
+   SEO - MÓVIL
+   ========================================================= */
+
+@media (max-width: 767px) {
+
+    .seo-bloques {
+        grid-template-columns: 1fr;
+        gap: 22px;
+        margin-top: 30px;
+    }
+
+    .seo-bloques > div {
+        padding-bottom: 18px;
+    }
+
+}
+/* Espacio entre categorías y contenido SEO */
+.categorias + .contenido-seo {
+    margin-top: 50px;
+}
+
+/* Separación entre bloques de contenido SEO */
+.contenido-seo + .contenido-seo {
+    margin-top: 60px;
 }
