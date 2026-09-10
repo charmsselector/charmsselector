@@ -1153,3 +1153,16 @@ footer p:last-of-type {
     color: #8A7B72;
     max-width: 220px;
 }
+
+.marca-enlace {
+    text-decoration: none;
+    color: inherit;
+}
+
+.marca-enlace:visited {
+    color: inherit;
+}
+
+.marca-enlace:hover {
+    color: inherit;
+}
