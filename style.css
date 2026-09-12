@@ -3,6 +3,7 @@
    HOJA DE ESTILOS PRINCIPAL
    ========================================================= */
 
+
 /* =========================================================
    ESTILOS GENERALES
    ========================================================= */
@@ -30,6 +31,7 @@ p {
     line-height: 1.6;
 }
 
+
 /* =========================================================
    CABECERA
    ========================================================= */
@@ -44,6 +46,7 @@ h1 {
     color: #49352B;
     letter-spacing: 0.5px;
 }
+
 
 /* =========================================================
    MARCA Y LEMA
@@ -67,6 +70,7 @@ h1 {
     text-align: center;
     margin: 0 0 12px;
 }
+
 
 /* =========================================================
    SEPARADOR DE LA MARCA
@@ -95,6 +99,7 @@ header .separador::before {
     font-size: 14px;
     line-height: 1;
 }
+
 
 /* =========================================================
    MENÚ PRINCIPAL
@@ -151,6 +156,7 @@ nav a:hover {
     color: #A77B3F;
 }
 
+
 /* =========================================================
    CONTENIDO PRINCIPAL
    ========================================================= */
@@ -168,12 +174,13 @@ main h2 {
     color: #49352B;
 }
 
+
 /* =========================================================
    PRESENTACIÓN / HERO
    ========================================================= */
 
 .hero {
-    max-width: 850px;
+    max-width: 700px;
     margin: 0 auto;
     padding: 5px 10px 30px;
 }
@@ -184,6 +191,7 @@ main h2 {
     font-size: 17px;
     line-height: 1.7;
 }
+
 
 /* =========================================================
    ARTÍCULOS GENERALES
@@ -215,6 +223,7 @@ article:hover {
     box-shadow: 0 5px 14px rgba(0, 0, 0, 0.12);
 }
 
+
 /* =========================================================
    BOTONES GENERALES
    ========================================================= */
@@ -236,6 +245,7 @@ article a:hover {
     color: #FFFFFF;
 }
 
+
 /* =========================================================
    CATEGORÍAS
    ========================================================= */
@@ -252,6 +262,7 @@ article a:hover {
     margin: 0 0 10px;
     grid-column: 1 / -1;
 }
+
 
 /* -------------------------
    Tarjetas de categorías
@@ -280,6 +291,7 @@ article a:hover {
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.09);
 }
 
+
 /* -------------------------
    Imagen
    ------------------------- */
@@ -287,11 +299,12 @@ article a:hover {
 .tarjeta-categoria img {
     display: block;
     width: 100%;
-    height: 190px;
+    height: 230px;
     object-fit: cover;
     border-radius: 0;
     margin: 0;
 }
+
 
 /* -------------------------
    Contenido
@@ -325,6 +338,7 @@ article a:hover {
     font-weight: 600;
     color: #A77B3F;
 }
+
 
 /* =========================================================
    PRODUCTOS
@@ -394,6 +408,7 @@ article a:hover {
     background-color: #654C3C;
 }
 
+
 /* =========================================================
    AVISO DE AFILIADO
    ========================================================= */
@@ -404,6 +419,7 @@ article a:hover {
     margin: 6px 0 0;
     text-align: center;
 }
+
 
 /* =========================================================
    PÁGINA DE INICIO
@@ -424,6 +440,7 @@ article a:hover {
     margin: 0 auto 25px;
     color: #6F625B;
 }
+
 
 /* =========================================================
    ENLACES DE INICIO
@@ -473,6 +490,7 @@ article a:hover {
     color: #756961;
 }
 
+
 /* =========================================================
    BOTÓN PRINCIPAL DE INICIO
    ========================================================= */
@@ -495,6 +513,7 @@ article a:hover {
     color: #FFFFFF;
     transform: translateY(-2px);
 }
+
 
 /* =========================================================
    CIERRE DE INICIO / ENLACES INTERNOS
@@ -538,12 +557,13 @@ article a:hover {
     transform: translateY(-2px);
 }
 
+
 /* =========================================================
    CONTENIDO SEO
    ========================================================= */
 
 .contenido-seo {
-    max-width: 1050px;
+    max-width: 900px;
     margin: 75px auto 0;
     text-align: left;
 }
@@ -571,50 +591,41 @@ article a:hover {
     text-underline-offset: 3px;
 }
 
+
 /* =========================================================
    PREGUNTAS FRECUENTES
    ========================================================= */
 
 .faq-seccion {
-    max-width: 900px;
-    margin: 60px auto 0;
-    text-align: center;
+    margin-top: 65px;
 }
 
 .faq-seccion > h2 {
-    margin-bottom: 30px;
+    text-align: center;
+    margin-bottom: 25px;
 }
 
-.faq-lista {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-}
-
-.faq-item {
+.faq-seccion article {
     min-height: 0;
-    margin: 0;
+    margin: 12px 0;
     padding: 20px 24px;
     background-color: #FFFFFF;
     border: 1px solid #D9C29A;
     border-radius: 10px;
-    text-align: left;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
 }
 
-.faq-item h3 {
-    margin: 0 0 8px;
-    font-size: 18px;
-    line-height: 1.4;
+.faq-seccion article h3 {
+    margin: 0 0 10px;
+    font-size: 19px;
     color: #49352B;
 }
 
-.faq-item p {
+.faq-seccion article p {
     margin: 0;
-    font-size: 15px;
     line-height: 1.6;
-    color: #756961;
 }
+
 
 /* =========================================================
    PÁGINA PLATA 925
@@ -624,6 +635,7 @@ article a:hover {
     max-width: 1100px;
     margin: 0 auto;
 }
+
 
 /* -------------------------
    Bloques con imagen
@@ -664,6 +676,7 @@ article a:hover {
     border-radius: 14px;
     box-shadow: 0 4px 14px rgba(0, 0, 0, 0.10);
 }
+
 
 /* -------------------------
    Ventajas
@@ -711,6 +724,7 @@ article a:hover {
     margin: 0;
 }
 
+
 /* -------------------------
    Cuidados
    ------------------------- */
@@ -750,6 +764,7 @@ article a:hover {
 .cuidado-item p {
     margin: 0;
 }
+
 
 /* -------------------------
    Enlaces de categorías
@@ -799,6 +814,7 @@ article a:hover {
     font-size: 18px;
 }
 
+
 /* -------------------------
    FAQ Plata 925
    ------------------------- */
@@ -832,6 +848,7 @@ article a:hover {
     margin: 0;
 }
 
+
 /* -------------------------
    Cierre Plata 925
    ------------------------- */
@@ -849,6 +866,20 @@ article a:hover {
 .plata-cierre p {
     margin: 0;
 }
+
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+footer {
+    margin-top: 70px;
+}
+
+footer p {
+    font-size: 13px;
+}
+
 
 /* =========================================================
    RESPONSIVE - ESCRITORIO
@@ -897,11 +928,12 @@ article a:hover {
         background-color: currentColor;
     }
 
+
     /* Categorías */
 
     .categorias {
-        grid-template-columns: repeat(3, 1fr);
-        gap: 24px;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
     }
 
     .categorias h2 {
@@ -915,18 +947,20 @@ article a:hover {
     */
 
     .tarjeta-categoria:last-child {
-        grid-column: 2;
+        grid-column: auto;
     }
+
 
     /* Productos */
 
     .productos {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(4, 1fr);
     }
 
     .productos h2 {
         grid-column: 1 / -1;
     }
+
 
     /* Inicio */
 
@@ -936,6 +970,7 @@ article a:hover {
         justify-self: center;
     }
 }
+
 
 /* =========================================================
    CABECERA DE PÁGINAS DE PRODUCTOS
@@ -949,6 +984,7 @@ article a:hover {
 .pagina-productos > .productos {
     margin-top: 15px;
 }
+
 
 /* =========================================================
    RESPONSIVE - MÓVIL
@@ -982,6 +1018,7 @@ article a:hover {
         margin: 8px 0;
     }
 
+
     /* Contenido SEO */
 
     .contenido-seo {
@@ -993,25 +1030,17 @@ article a:hover {
         font-size: 24px;
     }
 
+
     /* FAQ */
 
     .faq-seccion {
-        margin-top: 60px;
+        margin-top: 50px;
     }
 
-    .faq-item {
-        min-height: 0;
-        margin: 0;
+    .faq-seccion article {
         padding: 18px;
     }
 
-    .faq-item h3 {
-        font-size: 17px;
-    }
-
-    .faq-item p {
-        font-size: 14px;
-    }
 
     /* Plata 925 */
 
@@ -1062,6 +1091,7 @@ article a:hover {
         margin-bottom: 60px;
     }
 
+
     /* Categorías */
 
     .categorias {
@@ -1070,8 +1100,8 @@ article a:hover {
     }
 
     .tarjeta-categoria img {
-    height: 180px;
-}
+        height: 210px;
+    }
 
     .tarjeta-categoria-contenido {
         padding: 20px;
@@ -1084,6 +1114,7 @@ article a:hover {
     .tarjeta-categoria p {
         font-size: 14px;
     }
+
 
     /* Separadores del menú en móvil */
 
@@ -1100,6 +1131,75 @@ article a:hover {
         padding: 12px 10px;
     }
 
+}
+
+
+
+/* =========================================================
+   ANIMALES - CATEGORÍAS Y PRODUCTOS
+   ========================================================= */
+
+.categorias-animales {
+    grid-column: 1 / -1;
+    width: 100%;
+}
+
+.categoria-animales {
+    margin-bottom: 1.5rem;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.categoria-animales summary {
+    cursor: pointer;
+    padding: 1rem 1.25rem;
+    font-weight: 600;
+    font-size: 1.05rem;
+}
+
+.categoria-productos {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.categoria-productos .producto {
+    padding: 1rem;
+}
+
+.categoria-productos .producto img {
+    max-height: 180px;
+    object-fit: contain;
+}
+
+.categoria-productos .producto-info h3 {
+    font-size: 1.12rem;
+    margin-bottom: 0.6rem;
+}
+
+.categoria-productos .producto-info p:not(.afiliado) {
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+@media (max-width: 1100px) {
+    .categoria-productos {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 800px) {
+    .categoria-productos {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 600px) {
+    .categoria-productos {
+        grid-template-columns: 1fr;
+    }
 }
 
 /* =========================
@@ -1148,6 +1248,7 @@ footer p:first-of-type {
 footer p:last-of-type {
     color: #D9C29A;
 }
+
 
 /* =========================
    PÁGINAS LEGALES
@@ -1221,6 +1322,7 @@ footer p:last-of-type {
     margin: 8px 0;
 }
 
+
 /* =========================
    IMAGEN DE PRODUCTO NO DISPONIBLE
    ========================= */
@@ -1263,6 +1365,7 @@ footer p:last-of-type {
     max-width: 220px;
 }
 
+
 /* =========================
    ENLACE DE LA MARCA
    ========================= */
@@ -1280,55 +1383,372 @@ footer p:last-of-type {
 .marca-enlace:hover {
     color: inherit;
 }
-
 /* =========================================================
-   BLOQUES SEO DE PERSONAS Y OCASIONES
+   CATEGORÍAS - 4 COLUMNAS EN ESCRITORIO
    ========================================================= */
 
-.seo-bloques {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 28px 40px;
-    margin-top: 35px;
+@media (min-width: 768px) and (max-width: 1100px) {
+    .categorias {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
 }
 
-.seo-bloques > div {
-    padding-bottom: 22px;
-    border-bottom: 1px solid rgba(185, 152, 98, 0.25);
+@media (max-width: 767px) {
+    .categorias {
+        grid-template-columns: 1fr;
+    }
 }
 
-.seo-bloques h3 {
-    margin: 0 0 10px;
-    font-size: 20px;
+
+/* =========================================================
+   AJUSTE FINAL - CABECERA PROFESIONAL + 4 COLUMNAS
+   ========================================================= */
+
+@media (min-width: 768px) {
+    header {
+        max-width: 1240px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 35px;
+        text-align: left;
+        padding: 8px 10px 12px;
+        border-bottom: 1px solid rgba(185, 152, 98, 0.45);
+    }
+
+    .marca-enlace {
+        flex: 0 0 auto;
+    }
+
+    .marca {
+        font-size: 28px;
+        text-align: left;
+        margin: 0;
+        line-height: 1.1;
+    }
+
+    .lema {
+        font-size: 13px;
+        text-align: left;
+        margin: 4px 0 0;
+    }
+
+    header .separador {
+        display: none;
+    }
+
+    header nav {
+        border-bottom: none;
+        padding: 0;
+        margin-left: auto;
+    }
+
+    header nav ul,
+    header nav ul.menu-abierto {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        flex-wrap: nowrap;
+        width: auto;
+        max-width: none;
+        gap: 28px;
+        margin: 0;
+    }
+
+    header nav li {
+        margin: 0;
+    }
+
+    header nav a {
+        padding: 8px 0;
+        font-size: 15px;
+    }
+
+    header nav ul li:not(:last-child)::after {
+        display: none;
+    }
+
+    /* Todas las páginas de productos: 4 tarjetas por fila */
+    .productos {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
 }
 
-.seo-bloques p {
-    margin: 0;
+@media (min-width: 768px) and (max-width: 1100px) {
+    .productos {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 767px) {
+    header {
+        text-align: center;
+    }
+
+    header .separador {
+        display: none;
+    }
+
+    header nav {
+        border-bottom: 1px solid rgba(185, 152, 98, 0.45);
+        padding-bottom: 18px;
+    }
+
+    .productos {
+        grid-template-columns: 1fr;
+    }
 }
 
 /* =========================================================
-   SEO - MÓVIL
+   AJUSTE DE ANCHO Y ESPACIADO - PÁGINAS DE PRODUCTOS
+   ========================================================= */
+
+@media (min-width: 768px) {
+    main {
+        max-width: 1360px;
+    }
+
+    .pagina-productos > .hero {
+        max-width: 900px;
+        padding-top: 28px;
+        padding-bottom: 4px;
+    }
+
+    .pagina-productos > .hero h1 {
+        margin-top: 0;
+        margin-bottom: 14px;
+    }
+
+    .pagina-productos > .hero p {
+        max-width: 780px;
+    }
+
+    .pagina-productos > .productos {
+        margin-top: 0;
+        gap: 18px;
+    }
+
+    .pagina-productos > .productos h2 {
+        margin-top: 18px;
+        margin-bottom: 16px;
+    }
+}
+
+/* =========================================================
+   CONTENIDO SEO - ANCHO Y BLOQUES EN 2 COLUMNAS
+   ========================================================= */
+
+@media (min-width: 768px) {
+    .contenido-seo {
+        max-width: 1300px;
+    }
+
+    .contenido-seo > p {
+        max-width: none;
+    }
+
+    .seo-bloques {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        column-gap: 50px;
+        row-gap: 0;
+    }
+
+    .seo-bloques > div {
+        padding: 0 0 28px;
+        margin-bottom: 28px;
+        border-bottom: 1px solid #E4D8C5;
+    }
+
+    .seo-bloques > div h3 {
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 767px) {
+    .seo-bloques {
+        display: block;
+    }
+}
+
+
+/* =========================================================
+   INICIO - SOLO AJUSTE DE ANCHO Y ALTURA DE INTRODUCCIÓN
+   ========================================================= */
+
+@media (min-width: 768px) {
+    .inicio-introduccion {
+        max-width: 1180px;
+        padding-top: 8px;
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+
+    .inicio-introduccion p {
+        max-width: 1200px;
+        margin-top: 6px;
+        margin-bottom: 6px;
+        line-height: 1.45;
+    }
+
+    .inicio-introduccion h1 {
+        margin-bottom: 10px;
+    }
+
+    .inicio-introduccion + .categorias {
+        margin-top: 22px;
+    }
+
+    .inicio-introduccion + .categorias h2 {
+        margin-top: 0;
+        margin-bottom: 12px;
+    }
+}
+
+/* =========================================================
+   UNIFICACIÓN VISUAL DE TODAS LAS PÁGINAS
+   Solo dimensiones y espaciado. Sin modificar contenido.
+   ========================================================= */
+
+@media (min-width: 768px) {
+
+    /* Mismo ancho útil para el contenido principal */
+    main {
+        max-width: 1360px;
+    }
+
+    /* Mismo encabezado en todas las páginas */
+    header {
+        max-width: 1240px;
+    }
+
+    /* Introducciones de las páginas de categorías:
+       mismo aprovechamiento horizontal que Inicio */
+    .pagina-productos > .hero {
+        max-width: 1200px;
+        padding-top: 28px;
+        padding-bottom: 0;
+    }
+
+    .pagina-productos > .hero h1 {
+        margin-top: 0;
+        margin-bottom: 12px;
+    }
+
+    .pagina-productos > .hero p {
+        max-width: 1200px;
+        margin-top: 6px;
+        margin-bottom: 6px;
+        line-height: 1.45;
+    }
+
+    /* Misma separación antes de los productos */
+    .pagina-productos > .productos {
+        margin-top: 18px;
+        gap: 18px;
+    }
+
+    .pagina-productos > .productos h2 {
+        margin-top: 0;
+        margin-bottom: 16px;
+    }
+
+    /* Misma anchura para el contenido SEO */
+    .contenido-seo {
+        max-width: 1300px;
+    }
+
+    .contenido-seo > p {
+        max-width: none;
+    }
+
+    /* Cuando una página tiene bloques SEO, misma distribución */
+    .seo-bloques {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        column-gap: 50px;
+        row-gap: 0;
+    }
+}
+
+/* =========================================================
+   CORRECCIÓN - CABECERA MÓVIL
+   Solo afecta a pantallas de menos de 768px
    ========================================================= */
 
 @media (max-width: 767px) {
 
-    .seo-bloques {
-        grid-template-columns: 1fr;
-        gap: 22px;
-        margin-top: 30px;
+    header {
+        display: block;
+        width: 100%;
+        max-width: none;
+        margin: 0;
+        padding: 0;
+        text-align: center;
     }
 
-    .seo-bloques > div {
+    .marca-enlace {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .marca {
+        font-size: 38px;
+        text-align: center;
+        margin: 10px 0 4px;
+        line-height: 1.1;
+    }
+
+    .lema {
+        font-size: 15px;
+        text-align: center;
+        margin: 0 0 12px;
+    }
+
+    header .separador {
+        display: none;
+    }
+
+    header nav {
+        width: 100%;
+        border-bottom: 1px solid rgba(185, 152, 98, 0.45);
         padding-bottom: 18px;
+        margin: 0;
+    }
+
+    .menu-toggle {
+        display: block;
+        margin: 0 auto 15px;
     }
 
 }
-/* Espacio entre categorías y contenido SEO */
-.categorias + .contenido-seo {
-    margin-top: 50px;
-}
 
-/* Separación entre bloques de contenido SEO */
-.contenido-seo + .contenido-seo {
-    margin-top: 60px;
+@media (max-width: 767px) {
+
+    header .separador {
+        display: block;
+        width: 190px;
+        height: 14px;
+        margin: 0 auto 18px;
+        background:
+            linear-gradient(#B89B5E, #B89B5E) left center / 80px 1px no-repeat,
+            linear-gradient(#B89B5E, #B89B5E) right center / 80px 1px no-repeat;
+        position: relative;
+    }
+
+    header .separador::before {
+        content: "✦";
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        padding: 0 7px;
+        background-color: #F6F1E8;
+        color: #B89B5E;
+        font-size: 14px;
+        line-height: 1;
+    }
+
 }
