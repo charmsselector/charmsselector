@@ -1786,3 +1786,16 @@ footer p:last-of-type {
     }
 
 }
+
+/* =========================================================
+   TARJETAS DE PRODUCTOS CLICABLES
+   ========================================================= */
+
+.producto {
+    cursor: pointer;
+}
+
+.producto:focus-visible {
+    outline: 2px solid #B89B5E;
+    outline-offset: 3px;
+}

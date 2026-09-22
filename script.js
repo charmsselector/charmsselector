@@ -70,3 +70,50 @@ document.querySelectorAll(".producto img").forEach(function(imagen) {
     }
 
 });
+
+// =========================================================
+// TARJETAS DE PRODUCTOS CLICABLES
+// =========================================================
+
+document.querySelectorAll('.producto').forEach(producto => {
+
+    const enlaceAmazon = producto.querySelector('.boton-producto');
+
+    if (!enlaceAmazon) return;
+
+    producto.setAttribute('role', 'link');
+    producto.setAttribute('tabindex', '0');
+
+    producto.addEventListener('click', function (event) {
+
+        // Si se ha pulsado directamente un enlace,
+        // dejamos que funcione de forma normal.
+        if (event.target.closest('a')) {
+            return;
+        }
+
+        window.open(
+            enlaceAmazon.href,
+            '_blank',
+            'noopener,noreferrer'
+        );
+
+    });
+
+    producto.addEventListener('keydown', function (event) {
+
+        if (event.key === 'Enter' || event.key === ' ') {
+
+            event.preventDefault();
+
+            window.open(
+                enlaceAmazon.href,
+                '_blank',
+                'noopener,noreferrer'
+            );
+
+        }
+
+    });
+
+});
