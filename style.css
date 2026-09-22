@@ -1799,3 +1799,101 @@ footer p:last-of-type {
     outline: 2px solid #B89B5E;
     outline-offset: 3px;
 }
+/* =========================================================
+   BOTONES DE PRODUCTO
+   ========================================================= */
+
+.boton-producto {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+    margin: 0;
+}
+
+.boton-compartir {
+    width: 58px;
+    height: 44px;
+    margin-left: 10px;
+    padding: 0;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    vertical-align: middle;
+
+    background-color: transparent;
+    border: 2px solid #B89B5E;
+    border-radius: 8px;
+
+    color: #B89B5E;
+    cursor: pointer;
+
+    transition:
+        background-color 0.2s ease,
+        color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.boton-compartir svg {
+    width: 22px;
+    height: 22px;
+
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.8;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.boton-compartir:hover {
+    background-color: #B89B5E;
+    color: #FFFFFF;
+    transform: translateY(-1px);
+}
+
+.boton-compartir:focus-visible {
+    outline: 2px solid #49352B;
+    outline-offset: 3px;
+}
+
+.boton-compartir.compartido {
+    background-color: #B89B5E;
+    color: #FFFFFF;
+}
+
+@media (max-width: 767px) {
+
+    .boton-compartir {
+        width: 52px;
+        height: 44px;
+        margin-left: 8px;
+    }
+
+    .boton-compartir svg {
+        width: 21px;
+        height: 21px;
+    }
+
+}
+
+/* =========================================================
+   FILA DE BOTONES DEL PRODUCTO
+   ========================================================= */
+
+.fila-botones {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: auto;
+}
+
+.fila-botones .boton-producto {
+    margin: 0;
+}
+
+.fila-botones .boton-compartir {
+    flex-shrink: 0;
+}
