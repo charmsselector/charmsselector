@@ -1897,3 +1897,95 @@ footer p:last-of-type {
 .fila-botones .boton-compartir {
     flex-shrink: 0;
 }
+
+/* =========================================================
+   CABECERA FINAL - LOGO ARRIBA + MENÚ CENTRADO
+   Solo modifica la cabecera en escritorio
+   ========================================================= */
+
+@media (min-width: 768px) {
+
+    header {
+        max-width: 1400px;
+        margin: 0 auto;
+        display: block;
+        text-align: center;
+        padding: 8px 10px 0;
+        border-bottom: none;
+    }
+
+    .marca-enlace {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .marca {
+        font-size: 38px;
+        text-align: center;
+        margin: 10px 0 4px;
+        line-height: 1.1;
+    }
+
+    .lema {
+        font-size: 15px;
+        text-align: center;
+        margin: 0 0 12px;
+    }
+
+    header .separador {
+        display: block;
+        margin: 0 auto 18px;
+    }
+
+    header nav {
+        width: 100%;
+        margin: 0;
+        padding: 0 0 18px;
+        border-bottom: 1px solid rgba(185, 152, 98, 0.45);
+    }
+
+    header nav ul,
+    header nav ul.menu-abierto {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+        width: 100%;
+        max-width: 1400px;
+        margin: 0 auto;
+        gap: 20px;
+    }
+
+    header nav li {
+        margin: 0;
+        flex: 0 0 auto;
+    }
+
+    header nav a {
+        padding: 8px 0;
+        font-size: 15px;
+    }
+
+    header nav ul li:not(:last-child)::after {
+        display: none;
+    }
+
+}
+
+
+/* =========================================================
+   ESCRITORIO MÁS ESTRECHO
+   Permite dos líneas si realmente hace falta
+   ========================================================= */
+
+@media (min-width: 768px) and (max-width: 1150px) {
+
+    header nav ul,
+    header nav ul.menu-abierto {
+        flex-wrap: wrap;
+        row-gap: 2px;
+        column-gap: 18px;
+    }
+
+}
