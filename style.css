@@ -2007,3 +2007,49 @@ footer p:last-of-type {
         grid-template-columns: 1fr;
     }
 }
+
+/* DESPLEGABLES DE NÚMEROS */
+
+.productos {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.productos > details {
+    display: block;
+    width: 100%;
+}
+
+.productos > details > summary {
+    cursor: pointer;
+}
+
+.productos > details > summary h2 {
+    display: inline;
+}
+
+
+/* PRODUCTOS DENTRO DE CADA DESPLEGABLE */
+
+.productos-numero {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    width: 100%;
+}
+
+
+/* MÓVIL: UN PRODUCTO POR FILA */
+
+@media (max-width: 768px) {
+
+    .productos-numero {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+.productos > details > .productos-numero {
+    margin-top: 25px;
+}
