@@ -2053,3 +2053,42 @@ footer p:last-of-type {
 .productos > details > .productos-numero {
     margin-top: 25px;
 }
+
+/* =========================
+   DESPLEGABLES DE MESES
+   ========================= */
+
+.productos {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.productos > details {
+    display: block;
+    width: 100%;
+}
+
+.productos > details > summary {
+    cursor: pointer;
+}
+
+.productos > details > summary h2 {
+    display: inline;
+}
+
+.productos-mes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    width: 100%;
+    margin-top: 25px;
+}
+
+@media (max-width: 768px) {
+
+    .productos-mes {
+        grid-template-columns: 1fr;
+    }
+
+}
