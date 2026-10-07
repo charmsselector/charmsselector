@@ -2008,26 +2008,6 @@ footer p:last-of-type {
     }
 }
 
-/* DESPLEGABLES DE NÚMEROS */
-
-.productos {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.productos > details {
-    display: block;
-    width: 100%;
-}
-
-.productos > details > summary {
-    cursor: pointer;
-}
-
-.productos > details > summary h2 {
-    display: inline;
-}
 
 
 /* PRODUCTOS DENTRO DE CADA DESPLEGABLE */
@@ -2058,26 +2038,26 @@ footer p:last-of-type {
    DESPLEGABLES DE MESES
    ========================= */
 
-.productos {
+.meses-desplegables {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-.productos > details {
+.meses-desplegables > details {
     display: block;
     width: 100%;
 }
 
-.productos > details > summary {
+.meses-desplegables > details > summary {
     cursor: pointer;
 }
 
-.productos > details > summary h2 {
+.meses-desplegables > details > summary h2 {
     display: inline;
 }
 
-.productos-mes {
+.meses-desplegables .productos-mes {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
@@ -2087,8 +2067,83 @@ footer p:last-of-type {
 
 @media (max-width: 768px) {
 
-    .productos-mes {
+    .meses-desplegables .productos-mes {
         grid-template-columns: 1fr;
     }
 
+}
+
+/* =========================
+   DESPLEGABLES DE NÚMEROS
+   ========================= */
+
+.productos-numeros {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.productos-numeros > details {
+    display: block;
+    width: 100%;
+}
+
+.productos-numeros > details > summary {
+    cursor: pointer;
+}
+
+.productos-numeros > details > summary h2 {
+    display: inline;
+}
+
+.productos-numeros .productos-numero {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    width: 100%;
+    margin-top: 25px;
+}
+
+@media (max-width: 768px) {
+    .productos-numeros .productos-numero {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* =========================
+   DESPLEGABLES DE MESES
+   ========================= */
+
+.meses-desplegables {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.meses-desplegables > details {
+    display: block;
+    width: 100%;
+}
+
+.meses-desplegables > details > summary {
+    cursor: pointer;
+}
+
+.meses-desplegables > details > summary h2 {
+    display: inline;
+}
+
+.meses-desplegables .productos-mes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    width: 100%;
+    margin-top: 25px;
+}
+
+@media (max-width: 768px) {
+    .meses-desplegables .productos-mes {
+        grid-template-columns: 1fr;
+    }
 }
