@@ -1899,6 +1899,43 @@ footer p:last-of-type {
 }
 
 /* =========================================================
+   DESPLEGABLES DE HORÓSCOPO
+   ========================================================= */
+
+.horoscopos-desplegables {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.horoscopos-desplegables > details {
+    display: block;
+    width: 100%;
+}
+
+.horoscopos-desplegables > details > summary {
+    cursor: pointer;
+}
+
+.horoscopos-desplegables > details > summary h2 {
+    display: inline;
+}
+
+.horoscopos-desplegables .productos-horoscopo {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 20px;
+    width: 100%;
+    margin-top: 25px;
+}
+
+@media (max-width: 767px) {
+    .horoscopos-desplegables .productos-horoscopo {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* =========================================================
    CABECERA FINAL - LOGO ARRIBA + MENÚ CENTRADO
    Solo modifica la cabecera en escritorio
    ========================================================= */
