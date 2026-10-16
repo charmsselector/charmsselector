@@ -2184,3 +2184,53 @@ footer p:last-of-type {
         grid-template-columns: 1fr;
     }
 }
+
+/* =========================================================
+   PRODUCTOS EN MÓVIL: DOS COLUMNAS
+   ========================================================= */
+
+@media (max-width: 767px) {
+    .pagina-productos > .productos,
+    .pagina-productos .productos-horoscopo,
+    .pagina-productos .productos-letra,
+    .pagina-productos .productos-numero,
+    .pagina-productos .productos-mes,
+    .pagina-productos .categoria-productos {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+
+/* =========================================================
+   DESCRIPCIONES EXPANDIBLES DE PRODUCTO
+   ========================================================= */
+
+.pagina-productos .producto-info > .descripcion-producto {
+    max-height: 4.8em;
+    overflow: hidden;
+    margin-bottom: 8px;
+}
+
+.pagina-productos .producto-info > .descripcion-producto.is-expanded {
+    max-height: none;
+}
+
+.pagina-productos .boton-descripcion {
+    align-self: flex-start;
+    margin: 0 0 15px;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    color: #A77B3F;
+    font: inherit;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.pagina-productos .boton-descripcion:focus-visible {
+    outline: 2px solid #A77B3F;
+    outline-offset: 3px;
+}

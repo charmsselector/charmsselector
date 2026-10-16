@@ -232,3 +232,50 @@ filaBotones.appendChild(botonCompartir);
     });
 
 });
+
+// =========================================================
+// DESCRIPCIONES EXPANDIBLES DE PRODUCTO
+// =========================================================
+
+document.querySelectorAll('.pagina-productos .producto').forEach((producto, indice) => {
+
+    const descripcion = producto.querySelector(
+        '.producto-info > p:not(.precio):not(.afiliado)'
+    );
+
+    if (!descripcion) {
+        return;
+    }
+
+    descripcion.classList.add('descripcion-producto');
+
+    const idBase = producto.id || ('producto-descripcion-' + (indice + 1));
+    const idDescripcion = idBase + '-descripcion';
+    const botonDescripcion = document.createElement('button');
+
+    descripcion.id = idDescripcion;
+
+    botonDescripcion.type = 'button';
+    botonDescripcion.className = 'boton-descripcion';
+    botonDescripcion.setAttribute('aria-controls', idDescripcion);
+    botonDescripcion.setAttribute('aria-expanded', 'false');
+    botonDescripcion.textContent = 'Ver más';
+
+    botonDescripcion.addEventListener('click', function (event) {
+        event.preventDefault();
+        event.stopPropagation();
+
+        const expandida = descripcion.classList.toggle('is-expanded');
+
+        botonDescripcion.setAttribute(
+            'aria-expanded',
+            String(expandida)
+        );
+
+        botonDescripcion.textContent = expandida
+            ? 'Ver menos'
+            : 'Ver más';
+    });
+
+    descripcion.after(botonDescripcion);
+});
