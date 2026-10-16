@@ -50,8 +50,8 @@ body {
     font-family: 'Inter', Arial, sans-serif;
     margin: 0;
     padding: 15px;
-    background-color: #F6F1E8;
-    color: #2B2522;
+    background-color: #fbfaf7;
+    color: #34251f;
 }
 
 h1,
@@ -2026,168 +2026,79 @@ footer p:last-of-type {
     }
 
 }
+/* =========================================================
+   AJUSTES FINALES UNIFICADOS
+   Hero, desplegables y tarjetas de productos
+   ========================================================= */
 
+/* -------------------------
+   Desplegables de productos
+   ------------------------- */
+
+.horoscopos-desplegables,
+.meses-desplegables,
+.productos-numeros,
 .productos-letras {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-.productos-letras .productos-letra {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-}
-
-@media (max-width: 768px) {
-    .productos-letras .productos-letra {
-        grid-template-columns: 1fr;
-    }
-}
-
-
-
-/* PRODUCTOS DENTRO DE CADA DESPLEGABLE */
-
-.productos-numero {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-    width: 100%;
-}
-
-
-/* MÓVIL: UN PRODUCTO POR FILA */
-
-@media (max-width: 768px) {
-
-    .productos-numero {
-        grid-template-columns: 1fr;
-    }
-
-}
-
-.productos > details > .productos-numero {
-    margin-top: 25px;
-}
-
-/* =========================
-   DESPLEGABLES DE MESES
-   ========================= */
-
-.meses-desplegables {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.meses-desplegables > details {
+.horoscopos-desplegables > details,
+.meses-desplegables > details,
+.productos-numeros > details,
+.productos-letras > details {
     display: block;
     width: 100%;
 }
 
-.meses-desplegables > details > summary {
+.horoscopos-desplegables > details > summary,
+.meses-desplegables > details > summary,
+.productos-numeros > details > summary,
+.productos-letras > details > summary {
     cursor: pointer;
 }
 
-.meses-desplegables > details > summary h2 {
+.horoscopos-desplegables > details > summary h2,
+.meses-desplegables > details > summary h2,
+.productos-numeros > details > summary h2,
+.productos-letras > details > summary h2 {
     display: inline;
 }
 
-.meses-desplegables .productos-mes {
+/* -------------------------
+   Cuadrículas de productos
+   ------------------------- */
+
+.pagina-productos > .productos,
+.pagina-productos .productos-horoscopo,
+.pagina-productos .productos-letra,
+.pagina-productos .productos-numero,
+.pagina-productos .productos-mes,
+.pagina-productos .categoria-productos {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.pagina-productos .productos-horoscopo,
+.pagina-productos .productos-letra,
+.pagina-productos .productos-numero,
+.pagina-productos .productos-mes {
     width: 100%;
     margin-top: 25px;
 }
 
-@media (max-width: 768px) {
-
-    .meses-desplegables .productos-mes {
-        grid-template-columns: 1fr;
-    }
-
-}
-
-/* =========================
-   DESPLEGABLES DE NÚMEROS
-   ========================= */
-
-.productos-numeros {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.productos-numeros > details {
-    display: block;
-    width: 100%;
-}
-
-.productos-numeros > details > summary {
-    cursor: pointer;
-}
-
-.productos-numeros > details > summary h2 {
-    display: inline;
-}
-
-.productos-numeros .productos-numero {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-    width: 100%;
-    margin-top: 25px;
-}
-
-@media (max-width: 768px) {
-    .productos-numeros .productos-numero {
-        grid-template-columns: 1fr;
+@media (min-width: 768px) and (max-width: 1100px) {
+    .pagina-productos > .productos,
+    .pagina-productos .productos-horoscopo,
+    .pagina-productos .productos-letra,
+    .pagina-productos .productos-numero,
+    .pagina-productos .productos-mes,
+    .pagina-productos .categoria-productos {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
     }
 }
-
-
-/* =========================
-   DESPLEGABLES DE MESES
-   ========================= */
-
-.meses-desplegables {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.meses-desplegables > details {
-    display: block;
-    width: 100%;
-}
-
-.meses-desplegables > details > summary {
-    cursor: pointer;
-}
-
-.meses-desplegables > details > summary h2 {
-    display: inline;
-}
-
-.meses-desplegables .productos-mes {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-    width: 100%;
-    margin-top: 25px;
-}
-
-@media (max-width: 768px) {
-    .meses-desplegables .productos-mes {
-        grid-template-columns: 1fr;
-    }
-}
-
-/* =========================================================
-   PRODUCTOS EN MÓVIL: DOS COLUMNAS
-   ========================================================= */
 
 @media (max-width: 767px) {
     .pagina-productos > .productos,
@@ -2196,22 +2107,129 @@ footer p:last-of-type {
     .pagina-productos .productos-numero,
     .pagina-productos .productos-mes,
     .pagina-productos .categoria-productos {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+        gap: 12px;
     }
 }
 
+/* -------------------------
+   Títulos de las categorías
+   ------------------------- */
 
-/* =========================================================
-   DESCRIPCIONES EXPANDIBLES DE PRODUCTO
-   ========================================================= */
+.pagina-productos .productos > details > summary,
+.pagina-productos .productos-numeros > details > summary,
+.pagina-productos .meses-desplegables > details > summary,
+.pagina-productos .horoscopos-desplegables > details > summary,
+.pagina-productos .productos-letras > details > summary,
+.pagina-productos .productos > details > summary h2,
+.pagina-productos .productos-numeros > details > summary h2,
+.pagina-productos .meses-desplegables > details > summary h2,
+.pagina-productos .horoscopos-desplegables > details > summary h2,
+.pagina-productos .productos-letras > details > summary h2 {
+    font-family: 'Inter', Arial, sans-serif;
+    font-size: 26px;
+    line-height: 1.3;
+    font-weight: 600;
+}
 
-.pagina-productos .producto-info > .descripcion-producto {
+.pagina-productos .productos > details > summary h2,
+.pagina-productos .productos-numeros > details > summary h2,
+.pagina-productos .meses-desplegables > details > summary h2,
+.pagina-productos .horoscopos-desplegables > details > summary h2,
+.pagina-productos .productos-letras > details > summary h2 {
+    display: inline;
+    margin: 16px 0 14px;
+}
+
+.pagina-productos details > summary::marker {
+    color: #B4874A;
+    font-size: 0.8em;
+}
+
+@media (max-width: 767px) {
+    .pagina-productos .productos > details > summary,
+    .pagina-productos .productos-numeros > details > summary,
+    .pagina-productos .meses-desplegables > details > summary,
+    .pagina-productos .horoscopos-desplegables > details > summary,
+    .pagina-productos .productos-letras > details > summary,
+    .pagina-productos .productos > details > summary h2,
+    .pagina-productos .productos-numeros > details > summary h2,
+    .pagina-productos .meses-desplegables > details > summary h2,
+    .pagina-productos .horoscopos-desplegables > details > summary h2,
+    .pagina-productos .productos-letras > details > summary h2 {
+        font-size: 22px;
+    }
+}
+
+/* -------------------------
+   Hero de las páginas de productos
+   ------------------------- */
+
+.pagina-productos > .hero-elegante,
+.hero-elegante {
+    max-width: 1200px;
+    margin: 24px auto 18px;
+    text-align: center;
+}
+
+.hero-elegante .etiqueta-seccion {
+    margin: 0 0 12px;
+    color: #A77B3F;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+}
+
+.hero-elegante h1 {
+    max-width: 680px;
+    margin: 0 auto 12px;
+    font-size: clamp(32px, 3.5vw, 46px);
+    line-height: 1.12;
+    font-weight: 600;
+}
+
+.hero-elegante .intro {
+    max-width: 700px;
+    margin: 0 auto;
+    color: #756961;
+    font-size: 17px;
+    line-height: 1.5;
+}
+
+@media (min-width: 900px) {
+    .hero-elegante h1 {
+        max-width: 950px;
+        font-size: 46px;
+    }
+}
+
+@media (max-width: 767px) {
+    .hero-elegante {
+        margin: 22px auto 14px;
+    }
+
+    .hero-elegante h1 {
+        max-width: 100%;
+        font-size: 32px;
+    }
+
+    .hero-elegante .intro {
+        font-size: 16px;
+    }
+}
+
+/* -------------------------
+   Descripciones expandibles
+   ------------------------- */
+
+.pagina-productos .descripcion-producto {
     max-height: 4.8em;
     overflow: hidden;
     margin-bottom: 8px;
 }
 
-.pagina-productos .producto-info > .descripcion-producto.is-expanded {
+.pagina-productos .descripcion-producto.is-expanded {
     max-height: none;
 }
 
@@ -2233,4 +2251,210 @@ footer p:last-of-type {
 .pagina-productos .boton-descripcion:focus-visible {
     outline: 2px solid #A77B3F;
     outline-offset: 3px;
+}
+.pagina-productos .productos h2,
+.pagina-productos .productos-numeros h2,
+.pagina-productos .meses-desplegables h2,
+.pagina-productos .horoscopos-desplegables h2,
+.pagina-productos .productos-letras h2,
+.pagina-productos details summary {
+    font-family: 'Inter', Arial, sans-serif !important;
+    font-size: 26px !important;
+    line-height: 1.3 !important;
+    font-weight: 600 !important;
+    margin: 16px 0 14px !important;
+}
+
+@media (max-width: 767px) {
+    .pagina-productos .productos h2,
+    .pagina-productos .productos-numeros h2,
+    .pagina-productos .meses-desplegables h2,
+    .pagina-productos .horoscopos-desplegables h2,
+    .pagina-productos .productos-letras h2,
+    .pagina-productos details summary {
+        font-size: 22px !important;
+    }
+}
+
+.productos.productos-numeros > details > summary {
+    text-align: center;
+    cursor: pointer;
+}
+
+.productos.productos-numeros > details > summary h2 {
+    display: inline;
+    margin: 0;
+    font-family: 'Inter', Arial, sans-serif !important;
+    font-size: 26px !important;
+    line-height: 1.3;
+    font-weight: 600;
+    color: #49352B;
+}
+
+@media (max-width: 767px) {
+    .productos.productos-numeros > details > summary h2 {
+        font-size: 22px !important;
+    }
+}
+
+section.productos.productos-numeros > details > summary > h2 {
+    font-family: Arial, sans-serif !important;
+    font-size: 26px !important;
+    font-weight: 600 !important;
+}
+
+.productos details > summary h2,
+.productos-numeros details > summary h2,
+.meses-desplegables details > summary h2,
+.horoscopos-desplegables details > summary h2,
+.productos-letras details > summary h2 {
+    display: inline !important;
+    margin: 0 !important;
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-size: 26px !important;
+    line-height: 1.3 !important;
+    font-weight: 600 !important;
+    color: #49352B;
+}
+
+@media (max-width: 767px) {
+    .productos details > summary h2,
+    .productos-numeros details > summary h2,
+    .meses-desplegables details > summary h2,
+    .horoscopos-desplegables details > summary h2,
+    .productos-letras details > summary h2 {
+        font-size: 22px !important;
+    }
+}
+
+/* CORRECCIÓN DE LOS DESPLEGABLES */
+
+.pagina-productos > .productos:has(> details),
+.pagina-productos > .productos.productos-numeros {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.pagina-productos > .productos:has(> details) > details,
+.pagina-productos > .productos.productos-numeros > details {
+    display: block;
+    width: 100%;
+}
+
+.pagina-productos > .productos.productos-numeros .productos-numero {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 18px;
+    width: 100%;
+    margin-top: 25px;
+}
+
+@media (max-width: 767px) {
+    .pagina-productos > .productos.productos-numeros .productos-numero {
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .hero-elegante {
+        margin-top: 12px;
+    }
+}
+
+/* =========================================================
+   INTRODUCCIONES UNIFICADAS EN TODAS LAS PÁGINAS
+   ========================================================= */
+
+.pagina-productos > .hero:not(.hero-elegante) {
+    max-width: 1200px;
+    margin: 24px auto 18px;
+    padding: 0 20px;
+    text-align: center;
+}
+
+/* Etiqueta superior añadida visualmente mediante CSS */
+.pagina-productos > .hero:not(.hero-elegante)::before {
+    content: "CHARMS DE PLATA 925";
+    display: block;
+    margin-bottom: 12px;
+    color: #A77B3F;
+    font-family: 'Inter', Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+}
+
+/* Títulos principales */
+.pagina-productos > .hero:not(.hero-elegante) h1 {
+    max-width: 950px;
+    margin: 0 auto 12px;
+    font-size: clamp(32px, 3.5vw, 46px);
+    line-height: 1.12;
+    font-weight: 600;
+}
+
+/* Descripciones introductorias */
+.pagina-productos > .hero:not(.hero-elegante) p {
+    max-width: 760px;
+    margin: 0 auto;
+    color: #756961;
+    font-size: 17px;
+    line-height: 1.5;
+}
+
+@media (max-width: 767px) {
+    .pagina-productos > .hero:not(.hero-elegante) {
+        margin: 22px auto 14px;
+        padding: 0 14px;
+    }
+
+    .pagina-productos > .hero:not(.hero-elegante) h1 {
+        font-size: 32px;
+    }
+
+    .pagina-productos > .hero:not(.hero-elegante) p {
+        font-size: 16px;
+    }
+}
+
+/* =========================================================
+   ÚLTIMOS AJUSTES VISUALES DE PRODUCTOS
+   ========================================================= */
+
+/* Hero más compacto */
+.pagina-productos > .hero-elegante {
+    margin-top: 18px;
+    margin-bottom: 16px;
+}
+
+/* Títulos de producto más ligeros */
+.pagina-productos .producto h3 {
+    font-size: 19px;
+    line-height: 1.25;
+    font-weight: 600;
+}
+
+/* Efecto sutil al pasar sobre una tarjeta */
+.pagina-productos .producto {
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        border-color 0.25s ease;
+}
+
+.pagina-productos .producto:hover {
+    transform: translateY(-4px);
+    border-color: #B89B5E;
+    box-shadow: 0 8px 20px rgba(73, 53, 43, 0.12);
+}
+
+@media (max-width: 767px) {
+    .pagina-productos > .hero-elegante {
+        margin-top: 12px;
+    }
+
+    .pagina-productos .producto h3 {
+        font-size: 17px;
+    }
 }
