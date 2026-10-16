@@ -2458,3 +2458,11 @@ section.productos.productos-numeros > details > summary > h2 {
         font-size: 17px;
     }
 }
+
+@media (min-width: 1200px) {
+    .pagina-productos > .hero h1 {
+        max-width: 1200px;
+        font-size: 42px;
+        white-space: nowrap;
+    }
+}
