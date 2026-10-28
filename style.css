@@ -2327,34 +2327,6 @@ section.productos.productos-numeros > details > summary > h2 {
     }
 }
 
-/* CORRECCIÓN DE LOS DESPLEGABLES */
-
-.pagina-productos > .productos:has(> details),
-.pagina-productos > .productos.productos-numeros {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.pagina-productos > .productos:has(> details) > details,
-.pagina-productos > .productos.productos-numeros > details {
-    display: block;
-    width: 100%;
-}
-
-.pagina-productos > .productos.productos-numeros .productos-numero {
-    display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: 18px;
-    width: 100%;
-    margin-top: 25px;
-}
-
-@media (max-width: 767px) {
-    .pagina-productos > .productos.productos-numeros .productos-numero {
-        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
-    }
-}
 
 @media (max-width: 767px) {
     .hero-elegante {
@@ -2464,5 +2436,60 @@ section.productos.productos-numeros > details > summary > h2 {
         max-width: 1200px;
         font-size: 42px;
         white-space: nowrap;
+    }
+}
+
+.pagina-productos > .productos {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.pagina-productos > .productos > .desplegable-halloween {
+    grid-column: 1 / -1;
+    width: 100%;
+}
+
+@media (min-width: 768px) and (max-width: 1100px) {
+    .pagina-productos > .productos {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 767px) {
+    .pagina-productos > .productos {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+/* Cuadrícula limpia de Halloween */
+
+.pagina-productos > .productos > details.desplegable-halloween {
+    grid-column: 1 / -1;
+    width: 100%;
+    display: block;
+}
+
+.desplegable-halloween .productos-halloween {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 18px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.desplegable-halloween .productos-halloween .producto {
+    width: 100%;
+    min-width: 0;
+}
+
+@media (min-width: 768px) and (max-width: 1100px) {
+    .desplegable-halloween .productos-halloween {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 767px) {
+    .desplegable-halloween .productos-halloween {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 }
