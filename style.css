@@ -2493,3 +2493,139 @@ section.productos.productos-numeros > details > summary > h2 {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 }
+
+/* CORRECCIÓN DEFINITIVA: PÁGINA DE LETRAS */
+
+.pagina-productos > .productos.productos-letras {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 20px !important;
+    width: 100% !important;
+}
+
+.pagina-productos > .productos.productos-letras > details {
+    display: block !important;
+    width: 100% !important;
+}
+
+.pagina-productos .productos-letras .productos-letra {
+    display: grid !important;
+    grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+    gap: 18px !important;
+    width: 100% !important;
+}
+
+.pagina-productos .productos-letras .productos-letra .producto {
+    width: 100% !important;
+    min-width: 0 !important;
+    margin: 0 !important;
+}
+
+@media (max-width: 767px) {
+    .pagina-productos .productos-letras .productos-letra {
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+        gap: 12px !important;
+    }
+}
+
+/* CORRECCIÓN: PÁGINA DE NÚMEROS */
+
+.pagina-productos > .productos.productos-numeros {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 20px !important;
+    width: 100% !important;
+}
+
+.pagina-productos > .productos.productos-numeros > details {
+    display: block !important;
+    width: 100% !important;
+}
+
+.pagina-productos .productos-numeros .productos-numero {
+    display: grid !important;
+    grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+    gap: 18px !important;
+    width: 100% !important;
+}
+
+.pagina-productos .productos-numeros .productos-numero .producto {
+    width: 100% !important;
+    min-width: 0 !important;
+    margin: 0 !important;
+}
+
+@media (max-width: 767px) {
+    .pagina-productos .productos-numeros .productos-numero {
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+        gap: 12px !important;
+    }
+}
+
+/* CORRECCIÓN: PÁGINA DE MESES */
+
+.pagina-productos > .productos.meses-desplegables {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 20px !important;
+    width: 100% !important;
+}
+
+.pagina-productos > .productos.meses-desplegables > details {
+    display: block !important;
+    width: 100% !important;
+}
+
+.pagina-productos .meses-desplegables .productos-mes {
+    display: grid !important;
+    grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+    gap: 18px !important;
+    width: 100% !important;
+}
+
+.pagina-productos .meses-desplegables .productos-mes .producto {
+    width: 100% !important;
+    min-width: 0 !important;
+    margin: 0 !important;
+}
+
+@media (max-width: 767px) {
+    .pagina-productos .meses-desplegables .productos-mes {
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+        gap: 12px !important;
+    }
+}
+
+/* CORRECCIÓN: PÁGINA DE HORÓSCOPO */
+
+.pagina-productos > .productos.horoscopos-desplegables {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 20px !important;
+    width: 100% !important;
+}
+
+.pagina-productos > .productos.horoscopos-desplegables > details {
+    display: block !important;
+    width: 100% !important;
+}
+
+.pagina-productos .horoscopos-desplegables .productos-horoscopo {
+    display: grid !important;
+    grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+    gap: 18px !important;
+    width: 100% !important;
+}
+
+.pagina-productos .horoscopos-desplegables .productos-horoscopo .producto {
+    width: 100% !important;
+    min-width: 0 !important;
+    margin: 0 !important;
+}
+
+@media (max-width: 767px) {
+    .pagina-productos .horoscopos-desplegables .productos-horoscopo {
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+        gap: 12px !important;
+    }
+}
